@@ -48,10 +48,13 @@ type Template interface {
 
 // ButtonsTemplate type
 type ButtonsTemplate struct {
-	ThumbnailImageURL string
-	Title             string
-	Text              string
-	Actions           []TemplateAction
+	ThumbnailImageURL    string
+	ImageAspectRatio     string
+	ImageSize            string
+	ImageBackgroundColor string
+	Title                string
+	Text                 string
+	Actions              []TemplateAction
 }
 
 // MarshalJSON method of ButtonsTemplate
